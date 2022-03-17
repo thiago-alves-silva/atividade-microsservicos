@@ -24,15 +24,15 @@
         </div>
         <div title="Marca">
           <img src="img/car.svg" alt="">
-          <span class="marca" th:text="${carro.getMarca()}"></span>
+          <span th:text="${carro.getMarca()}"></span>
         </div>
         <div title="Ano">
           <img src="img/calendar.svg" alt="">
-          <span class="ano" th:text="${carro.getAno()}"></span>
+          <span th:text="${carro.getAno()}"></span>
         </div>
         <div title="Porta">
           <img src="img/door.svg" alt="">
-          <span class="porta" th:text="${carro.getPortas()}"></span>
+          <span th:text="${carro.getPortas()} + ' portas'"></span>
         </div>
         <div title="Aro">
           <img src="img/wheel.svg" alt="">
@@ -40,7 +40,7 @@
         </div>
         <div title="Combustível">
           <img src="img/gas.svg" alt="">
-          <span class="combustivel" th:text="${carro.getCombustivel()}"></span>
+          <span th:text="${carro.getCombustivel()}"></span>
         </div>
       </li>
     </ul>

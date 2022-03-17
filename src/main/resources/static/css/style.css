@@ -45,6 +45,11 @@ body {
   margin: 5px 0;
 }
 
+.lista .id {
+  color: #e91c5d;
+  font-size: 0.75rem;
+}
+
 .lista .modelo {
   color: #333;
   font-size: 1.5rem;
@@ -52,9 +57,8 @@ body {
   padding-bottom: 10px;
 }
 
-.lista .id {
-  color: #e91c5d;
-  font-size: 0.75rem;
+.lista .aro::after {
+  content: '"';
 }
 
 @media (max-width: 500px) {
