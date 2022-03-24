@@ -1,8 +1,14 @@
 package com.fiap.checkpoint.carros.model;
 
-import java.util.Random;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Carro {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String marca;
 	private String modelo;
@@ -16,7 +22,6 @@ public class Carro {
 	}
 
 	public Carro(String marca, String modelo, int ano, int portas, int aro, String combustivel) {
-		this.id = new Random().nextInt(9000) + 1000;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.ano = ano;
